@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Thinks to tell</title>
+		<link rel="icon" href="Images/logo.png" type="image/png" sizes="16x16">
+</head>
+<body onload="Load()">
+	<div id="preload"></div>
+    <section class="ham">
+        <ul>
+            <div class="close">&#10006;</div>
+            <li><a href="Index.html" class="active">Home</a></li>
+            <li><a href="blogs.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </section>
+    
+    <!-- nav -->
+    <section class="nav">
+        <div class="logo">
+            <h3><a href="Index.html">Thinks to tell</a></h3>
+            <p>playing with the thoughts</p>
+        </div>
+        <div class="ul">
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <ul>
+            <li><a href="Index.html" >Home</a></li>
+            <li><a href="blogs.html" >Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </div>
+    </section>
+
+    <div class="heading">
+        <h1>Contact</h1>
+    </div>
+
+    <div class="contact-p">
+        <p>Don’t hesitate to reach out with the contact information below, or send a message using the form. Let me know what you think of my posts. Any topics/ suggestions/ tips are always welcomed.</p>
+    </div>
+
+    <section class="contact-con">
+
+        <div class="write-info">
+            <h1>Get In Touch</h1>
+            <div class="min-info">
+                <span>
+                    Greater Noida<br>
+                    India<br>
+                    <a href="mailto:prajw.alive@gmail.com" target="_blank">prajw.alive@gmail.com</a><br>
+                </span>
+            </div>
+
+            <div class="social">
+                <ul>
+                    <li><a href="http://www.instagram.com/prajw_alive" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="mailto:prajw.alive@gmail.com   " target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC92YLUCFhk1g0ELgVQgZ9hg" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://open.spotify.com/show/4DITRdOuZjb7YBjXhQa9W8" target="_blank" class="spotify"><i class="fab fa-spotify"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h1>Send Us a Message</h1>
+            <form action="#">
+
+
+                <div class="input">
+                    <div class="lab"><label for="name"><b>Name</b>(required)</label></div>
+                    <input type="text" required>
+                </div>
+
+                <div class="input">
+                    <div class="lab"><label for="name"><b>Email</b>(required)</label></div>
+                    <input type="email" required>
+                </div>
+
+                <div class="input">
+                    <div class="lab"><label for="name"><b>Website</b></label></div>
+                    <input type="text">
+                </div>
+
+                <div class="input textarea">
+                    <div class="lab"><label for="name"><b>Message</b>(required)</label></div>
+                    <textarea rows="10"  class="textarea" required></textarea>
+                </div>
+
+                <div class="input btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <script>
+        document.querySelector('.hamburger').addEventListener("click", ()=>{
+            document.querySelector('.ham').classList.add("show")
+        })
+
+        document.querySelector('.close').addEventListener("click", ()=>{
+            document.querySelector('.ham').classList.remove("show")
+        })
+
+        function Load(){
+				document.querySelector("#preload").classList.add("hide");
+			}
+    </script>
+</body>
+</html>
