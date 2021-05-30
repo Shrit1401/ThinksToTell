@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="en-in">
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Thinks To Tell - playing tag with thoughts</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+		<link rel="icon" href="Images/logo.png" type="image/png" sizes="16x16">
+    </head>
+    <body onload="Load()">
+		<div id="preload"></div>
+		<section class="ham">
+			<ul>
+				<div class="close">&#10006;</div>
+				<li><a href="Index.html" class="active">Home</a></li>
+				<li><a href="blogs.html">Blog</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			
+		</section>
+		
+    	<!-- nav -->
+    	<section class="nav">
+    		<div class="logo">
+    			<h3><a href="Index.html">Thinks to tell</a></h3>
+    			<p>playing with the thoughts</p>
+    		</div>
+			<div class="ul">
+				<div class="hamburger"><i class="fas fa-bars"></i></div>
+    		<ul>
+    			<li><a href="Index.html" class="active">Home</a></li>
+    			<li><a href="blogs.html">Blog</a></li>
+    			<li><a href="about.html">About</a></li>
+    			<li><a href="contact.html">Contact</a></li>
+    		</ul>
+		</div>
+    	</section>
+    	<!-- nav -->
+
+    	<!-- home -->
+    	<section class="home">
+    		<div class="content">
+    			<h2>Welcome to my site</h2>
+    			<p>Thinks To Tell is an alliterated wordplay. I talk about things that I find interesting enough to share with more prople. These blogs are my way of trying my hand at writing. I also have a podcast for the same purpose, I hope to be frequent with them. You can check out all my stuff here and connect with me through social media. Enjoy!</p>
+    			<div class="btn">
+    				<a href="blogs.html">Blogs</a>
+    				<a href="https://open.spotify.com/show/4DITRdOuZjb7YBjXhQa9W8" target="_blank">Podcast</a>
+    				<a href="https://www.youtube.com/channel/UC92YLUCFhk1g0ELgVQgZ9hg" target="_blank">YouTube</a>
+    			</div>
+    		</div>
+    		<div class="wave">
+    		<img  src="Images/wave.svg" alt="wavee">
+    		</div>
+    	</section>
+    	<!-- home -->
+    	<section class="blogs">
+    		<h2>Latest from the Blog</h2>
+
+    		<div class="blogs-sec">
+
+    			<div class="blog-block">
+    				<h3><a href="Blogs/blog-1.html"  target="_blank">Password of Trust</a></h3>
+    					<p>I was just sitting and thinking about time travel, as a guy my age generally does, when this weird idea popped up into my head. Now I am aware that time travel is one of those topics that are too convoluted to even understand, if not write. However, I will not be touching the scientific side of it</p>
+    			
+					<div class="read" style="margin-bottom: 16px;">
+						<a href="Blogs/blog-1.html"   target="_blank"class="read">Continue Reading →</a>
+					</div>
+						<span class="date">May 19, 2020</span>
+				</div>
+
+
+				<div class="blog-block">
+    				<h3><a href="Blogs/blog-2.html" target="_blank">May the source be with you</a></h3>
+    					<p>Hi everyone! I have been wanting to write blogs for a very long time about things that I think should be talked about more. They will be informative but at the same time I will be writing more about my views on the topic, so think of it as an introduction to interesting concepts/ topics</p>
+    			
+					<div class="read" style="margin-bottom: 16px;">
+						<a href="Blogs/blog-2.html" class="read" target="_blank">Continue Reading →</a>
+					</div>
+						<span class="date">May 10, 2020</span>
+				</div>
+					</div>
+    	</section>
+
+		<section class="footer">
+			<div class="details">
+				<h2>
+				Get new content delivered directly to your inbox.
+				</h2>
+			</div>
+
+			<div class="form">
+				<form action="#" method="POST">
+					<input type="email" class="text" placeholder="Enter your Email Adress">
+					<div class="btn">
+						<button type="submit">Subscribe</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<script>
+			document.querySelector('.hamburger').addEventListener("click", ()=>{
+				document.querySelector('.ham').classList.add("show")
+			})
+
+			document.querySelector('.close').addEventListener("click", ()=>{
+				document.querySelector('.ham').classList.remove("show")
+			})
+
+			function Load(){
+				document.querySelector("#preload").classList.add("hide");
+			}
+		</script>
+    </body>
+</html>

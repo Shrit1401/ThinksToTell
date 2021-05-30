@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Thinks To Tell</title>
+    <link rel="stylesheet" href="style.css">
+		<link rel="icon" href="Images/logo.png" type="image/png" sizes="16x16">
+</head>
+<body onload="Load()">
+	<div id="preload"></div>
+    <section class="ham">
+        <ul>
+            <div class="close">&#10006;</div>
+            <li><a href="Index.html" >Home</a></li>
+            <li><a href="blogs.html" class="active">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </section>
+    
+    <!-- nav -->
+    <section class="nav">
+        <div class="logo">
+            <h3><a href="Index.html">Thinks to tell</a></h3>
+            <p>playing with the thoughts</p>
+        </div>
+        <div class="ul">
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <ul>
+            <li><a href="Index.html" >Home</a></li>
+            <li><a href="blogs.html" class="active">Blog</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    </section>
+
+    <div class="heading">
+        <h1>Blog</h1>
+    </div>
+
+    <div class="blog-image">
+        <img src="https://source.unsplash.com/1600x600/?universe">
+    </div>
+
+    <section class="blogss">
+
+        <div class="blogs-page">
+                <h1><a class="h" href="Blogs/blog-1.html" target="_blank">Password of Trust</a></h1>
+                <p>I was just sitting and thinking about time travel, as a guy my age generally does, when this weird idea popped up into my head. Now I am aware that time travel is one of those topics that are too convoluted to even understand, if not write. However, I will not be touching the scientific side of it</p>
+                <a class="cont" href="Blogs/blog-1.html" target="_blank">Continue reading →</a>
+                <div class="date" style="margin-top: 20px;">
+                    <span>by prajwalive 
+                        May 19, 2020
+                        </span>
+                </div>
+        </div>
+
+
+        <div class="blogs-page">
+            <h1><a class="h" href="Blogs/blog-2.html" target="_blank">May The Source be With You</a></h1>
+            <p>Hi everyone! I have been wanting to write blogs for a very long time about things that I think should be talked about more. They will be informative but at the same time I will be writing more about my views on the topic, so think of it as an introduction to interesting concepts/ topics</p>
+            <a class="cont" href="Blogs/blog-2.html" target="_blank">Continue reading →</a>
+            <div class="date" style="margin-top: 20px;">
+                <span>by prajwalive 
+                    May 10, 2020
+                    </span>
+            </div>
+    </div>
+
+    </section>
+
+    <div class="blogs-contact">
+        <h1>Follow My Blog</h1>
+        <p>Get new content delivered directly to your inbox.</p>
+
+        <form action="#">
+            <input class="text2" type="text" placeholder="Enter your Email">
+            <div class="btn">
+                <button type="submit">Subscribe</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.querySelector('.hamburger').addEventListener("click", ()=>{
+            document.querySelector('.ham').classList.add("show")
+        })
+
+        document.querySelector('.close').addEventListener("click", ()=>{
+            document.querySelector('.ham').classList.remove("show")
+        })
+
+        function Load(){
+				document.querySelector("#preload").classList.add("hide");
+			}
+    </script>
+</body>
+</html>
